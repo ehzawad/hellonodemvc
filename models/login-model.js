@@ -6,11 +6,11 @@ var validateUser = function(user, loginCallback){
 	db.getData(sql, param ,function(result){
 		if(result == null || result.length == 0)
 		{
-			callback(false);
+			loginCallback(false);
 		}
 		else
 		{
-			callback(true);
+			loginCallback(true);
 		}
 
 	});
